@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сталкер: Тень Чернобыля</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+<header class="header">
+    <video class="header-video" autoplay loop muted>
+        <source src="videos/video_header.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="header-content">
+            <h1>Сталкер: Тень Чернобыля</h1>
+            <p>Добро пожаловать в Зону</p>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">Об игре</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </nav>
+            <a href="Сталкер%20тч.torrent" download="proposed_file_name" class="btn play-btn">Играть сейчас</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section id="about" class="main-content">
+        <h2>Описание игры</h2>
+        <p>"Сталкер: Тень Чернобыля" — это игра в жанре шутера от первого лица, разработанная компанией GSC Game World. Она переносит вас в опасный мир после катастрофы на Чернобыльской АЭС.</p>
+        <p>Присоединяйтесь к сталкерам, исследуйте Зону, сражайтесь с мутантами и пытайтесь выжить в этом враждебном мире.</p>
+        <a href="#" class="btn">Узнать больше</a>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Галерея</h2>
+        <div class="image-container">
+            <img src="images/stalker1.jpg" alt="Сталкер 1">
+            <img src="images/stalker2.jpg" alt="Сталкер 2">
+            <img src="images/stalker3.jpg" alt="Сталкер 3">
+            <img src="images/stalker4.jpg" alt="Сталкер 4">
+            <img src="images/stalker5.jpg" alt="Сталкер 5">
+            <img src="images/stalker6.jpg" alt="Сталкер 6">
+        </div>
+    </section>
+
+</div>
+
+<section id="reviews" class="м">
+    <h2 class="h2_reviews">Оставить отзыв</h2>
+    <form id="review-form" class="review-form" action="submit_review.php" method="POST">
+        <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Отзыв:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Отправить отзыв</button>
+    </form>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Сталкер. Все права защищены. <br>Созданияе сайта "Erbaevs"</p>
+    </div>
+</footer>
+
+<a href="#" class="scroll-to-top">Наверх</a>
+
+<script src="script.js"></script>
+</body>
+</html>
